@@ -15,3 +15,14 @@ malignant or benign.
 3. Ten real-valued features (a to j): Computed measurements from cell nuclei, including
 characteristics such as radius, texture, perimeter, area, smoothness, compactness, concavity, concave
 points, symmetry, and fractal dimension.
+
+# Model Training 
+Before training the data, I used Pandas Library to read and analyse data and dropped the unnecessary input features.
+
+Scikit-learn is an open-source Python library that implements a range of machine learning, pre-processing, cross-validation, and visualization algorithms using a unified interface. Scikit-learn is used for scaling the input features using the StandardScaler() and split the Dataset into training and test datasets using train_test_split().
+
+I used scikit-learn for training the model on the data.csv file using the Logistic Regression algorithm as the breast cancer diagnosis is a Binary Classification Problem where the target lables are either Malignant or Benign (1 or 0).
+
+By Evaluating the Accuracy on Training and Test Datasets, the outcome was as follows:
+- Accuracy on training data:  0.989010989010989
+- Accuracy on test data:  0.956140350877193
